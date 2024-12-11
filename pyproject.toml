@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "DPSMF"
+name = "SIG"
 version = "0.0.1"
 authors = [
   { name="Alexander Brown", email="alex.brown7711@gmail.com" },
 ]
-description = "Generates dynamic publishers, subscribers, and mock application interfaces using YAML files for multipl languages."
+description = "Generates dynamic publishers and subscribers application interfaces using YAML files for multiple languages."
 readme = "README.md"
 requires-python = ">=3.11"
 classifiers = [
@@ -18,10 +18,12 @@ classifiers = [
 ]
 
 dependencies = [
-  "nose == 1.3.7",
   "pyyaml == 6.0.1"
 ]
 
 [project.urls]
-Homepage = "https://github.com/alexb7711/DMSA"
-Issues = "https://github.com/alexb7711/DMSA/issues"
+Homepage = "https://github.com/alexb7711/socket-interface-generation"
+Issues = "https://github.com/alexb7711/socket-interface-generation/issues"
+
+[tool.setuptools]
+packages =  ["SIG"]

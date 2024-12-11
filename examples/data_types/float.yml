@@ -1,0 +1,17 @@
+name: "test_float_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+  float:
+  -
+    name: "float1"
+    value: 10.0
+    desc: "An example float"
+  -
+    name: "float2"
+    value: 5.0
+  -
+    name: "float3"
+  -
+    name: "badfloat"
+    value: 1

@@ -1,0 +1,17 @@
+name: "test_bool_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+  bool:
+    -
+      name: "my_false"
+      value: False
+      desc: "A description for this false bool"
+    -
+      name: "my_true"
+      value: True
+    -
+      name: "my_bool"
+    -
+      name: "bad_bool"
+      value: 3

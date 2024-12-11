@@ -4,7 +4,7 @@
 
 ##==============================================================================
 # Directories
-SRC_D     = src
+SRC_D     = SIG
 TST_D     = tests
 ENV_DIR   = .venv
 ifneq ($(wildcard $(ENV_DIR)/bin/.),)
@@ -20,7 +20,6 @@ BIN     = $(ENV_DIR)/bin
 else
 BIN     = $(ENV_DIR)/Scripts
 endif
-DEP     = dependencies
 PYTHON  = python
 
 ##==============================================================================
@@ -41,6 +40,7 @@ all: setup update run ## Default action
 test: setup ## Run unit tests
 	source $(BIN)/activate
 	$(PYTHON) -m unittest discover -s $(TST_D) -p "test_*.py"
+	$(PYTHON) -m unittest discover -s $(TST_D) -p "test_*.py"
 
 ##==============================================================================
 #
@@ -57,7 +57,7 @@ setup: ## Set up the project
 update: ## Update the virtual environment packages
 	@source $(BIN)/activate
 	@pip install --upgrade pip
-	@pip install -r $(DEP)
+	@pip install .
 
 ##==============================================================================
 #
@@ -69,7 +69,7 @@ run: ## Execute the program
 
 ##==============================================================================
 #
-doc: ## Generate DPSMF documentation
+doc: ## Generate SIG documentation
 	doxygen Doxyfile
 
 ##==============================================================================

@@ -1,0 +1,17 @@
+name: "test_int_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+  int:
+  -
+    name: "int1"
+    value: 1
+    desc: "An example integer"
+  -
+    name: "int2"
+    value: 2
+  -
+    name: "int3"
+  -
+    name: "badint"
+    value: 1.0

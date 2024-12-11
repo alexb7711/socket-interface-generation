@@ -1,4 +1,0 @@
-name: "test_subscriber"
-subscriptions:
-  - "test_publisher"
-desc: "This is a test subscriber"

@@ -1,0 +1,17 @@
+name: "test_string_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+    str:
+    -
+      name: "my_string1"
+      value: "My default string value"
+      desc: "An example string"
+    -
+      name: "my_string2"
+      value: "Remove the description"
+    -
+      name: "my_string3"
+    -
+      name: "badstring"
+      value: 3

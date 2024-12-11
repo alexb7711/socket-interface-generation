@@ -1,4 +1,0 @@
-bool:
-  name: "bool"
-  value: True
-  desc: "An example boolean"

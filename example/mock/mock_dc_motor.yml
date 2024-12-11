@@ -1,7 +1,0 @@
-name: "test_mock"
-data:
-  int:
-    - name: "Test"
-    - value: 1
-    - desc: "An integer"
-desc: "This is a test mock"

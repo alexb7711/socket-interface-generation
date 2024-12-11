@@ -1,0 +1,17 @@
+name: "test_list_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+  list:
+    -
+        name: "list"
+        type: int # int, float, str, etc.
+        value: [1, 2, 3]
+        desc: "A list of integers"
+    -
+        name: "list1"
+        type: float # int, float, str, etc.
+        value: [3.0, 2.0, 1.0]
+    -
+        name: "list2"
+        type: str # int, float, str, etc.

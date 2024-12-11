@@ -1,4 +1,0 @@
-int:
-  name: "int"
-  value: 1
-  desc: "An example integer"

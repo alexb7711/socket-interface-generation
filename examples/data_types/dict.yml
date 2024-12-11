@@ -1,0 +1,18 @@
+name: "test_dict_topic"
+lang: ["Python"]
+protocol: "UDP"
+data:
+    dict:
+      -
+        name: "dict"
+        value:
+           item1: "item1 value"
+           item2: "item2 value"
+           item3: "item3 value"
+        desc: "A dictionary"
+      -
+        name: "dict1"
+        value:
+           item1: 1
+           item2: 2
+           item3: 3
